@@ -3,6 +3,7 @@
    License: none (public domain)
 */
 
+@import url('https://fonts.googleapis.com/css2?family=Caveat&family=Rubik&display=swap');
 @font-face {
 	font-family: "COE";
 	src: url("./../assets/fonts/City\ of\ Ember.otf");
@@ -37,6 +38,8 @@ time, mark, audio, video {
 	margin: 0;
 	padding: 0;
 	border: 0;
+	font-family: 'Caveat', cursive;
+	font-family: 'Rubik', sans-serif;	
 	font-size: 100%;
 	font: inherit;
 	vertical-align: baseline;
