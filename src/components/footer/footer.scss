@@ -1,0 +1,47 @@
+@import '../../styles/variables.scss';
+
+@keyframes fadeIn {
+    to {
+        opacity: 0.5;
+    }
+}
+
+
+.footer {
+    opacity: 0;
+    animation: $site-fade-in-time ease-out 2s 1 fadeIn forwards;
+    position: fixed;
+    bottom: 0;
+    
+    width: 100%;
+    height: 2rem;
+    margin-top: 1rem;
+
+    border-top: 2px solid darkgray;
+
+    color: whitesmoke;
+    background-color: rgba(128, 128, 128, 0.7);
+
+    display: flex;
+    justify-content: end;
+    align-items: center;
+    z-index: 0;
+
+    span {
+        margin-right: 0.5rem;
+
+        a {
+            box-shadow: inset 0 0 0 0 orange;
+            color: whitesmoke;
+            // margin: 0 .5rem;
+            padding: 0 .5rem;
+            border-radius: 10px;
+
+            transition: color .3s ease-in-out, box-shadow .3s ease-in-out;
+            &:hover {
+                color: white;
+                box-shadow: inset 150px 0 0 0 orange;
+            }
+        }
+    }
+}

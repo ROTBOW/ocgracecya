@@ -9,8 +9,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
-
-    
+  
     
     .welcome-body {
         transform: translateY(5rem);
@@ -20,8 +19,8 @@
         color: whitesmoke;
         background-color: rgba(128, 128, 128, 0.6);
 
-        width: 50rem;
-        height: 23rem;
+        
+        height: fit-content;
 
         padding: 2rem;
         margin-top: 1rem;
@@ -30,7 +29,7 @@
         border-radius: 5rem;
 
         text-align: center;
-        font-size: 24px;
+        
 
         h2 {
             margin-bottom: 0.5rem;
@@ -38,3 +37,20 @@
         }
     }
 }
+
+@media only screen and (min-width: 700px) {
+    // computer screens
+    .welcome-body {
+        width: 50rem;
+        font-size: 24px;
+    }
+};
+  
+@media only screen and (max-width: 701px) {
+    // phone screens
+    .welcome-body {
+        width: 15rem;
+        font-size: 20px;
+        margin-bottom: 3rem;
+    }
+};

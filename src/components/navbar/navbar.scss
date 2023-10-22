@@ -109,9 +109,18 @@
   
 @media only screen and (max-width: 701px) {
     // phone screens
-    .navbar-socials {
-        svg {
+    .navbar-middlebar {
+        justify-content: center;
+
+        .navbar-leftside {
             display: none;
+        }
+
+        .navbar-socials {
+            display: none !important;
+            // svg {
+            //     display: none;
+            // }
         }
     }
 };
