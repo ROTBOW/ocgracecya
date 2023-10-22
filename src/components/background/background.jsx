@@ -3,12 +3,9 @@ import './background.scss';
 
 
 const Background = () => {
-
     return (
-        <div>
-            don't mind me
-        </div>
+        <div className="background"/>
     )
-}
+};
 
 export default Background;
