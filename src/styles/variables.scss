@@ -1,0 +1,9 @@
+
+$site-fade-in-time: 4s;
+
+@keyframes fadeInFromDirection {
+    to {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}

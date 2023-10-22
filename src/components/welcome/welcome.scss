@@ -1,0 +1,31 @@
+@import '../../styles/variables.scss';
+
+
+.welcome-container {
+    
+    width: 100%;
+    height: 80%;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    
+    
+    .welcome-body {
+        transform: translateY(5rem);
+        opacity: 0;
+        animation: $site-fade-in-time ease-out 2s 1 fadeInFromDirection forwards;
+
+        color: whitesmoke;
+        background-color: rgba(128, 128, 128, 0.6);
+
+        width: 50rem;
+        height: 40rem;
+
+        padding: 2rem;
+
+        border: 0.5rem solid rgba(169, 169, 169, 0.6);
+        border-radius: 5rem;
+    }
+}

@@ -9,20 +9,23 @@ import { ReactComponent as Mail } from "./../../assets/svgs/envelope.svg";
 const Navbar = () => {
 
     return (
-        <div className="navbar">
-            <div className="navbar-middlebar">
-                <div>Coming to Vesbers?</div>
-                <div className="navbar-title">
-                    <b>OCG</b>CYA
+        <>
+            <div className="navbar-reserve-space"/>
+            <div className="navbar">
+                <div className="navbar-middlebar">
+                    <div>Coming to Vesbers?</div>
+                    <div className="navbar-title">
+                        <b>OCG</b>CYA
+                    </div>
+                    <div className="navbar-socials">
+                        <Insta/>
+                        <Mail/>
+                    </div>
                 </div>
-                <div className="navbar-socials">
-                    <Insta/>
-                    <Mail/>
-                </div>
+                
+                <div className="navbar-line"/>
             </div>
-            
-            <div className="navbar-line"/>
-        </div>
+        </>
     )
 };
 

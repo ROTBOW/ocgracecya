@@ -1,6 +1,15 @@
+@import '../../styles/variables.scss';
 
+.navbar-reserve-space {
+    width: 100%;
+    height: 9rem;
+}
 
 .navbar {
+    transform: translateY(-5rem);
+    opacity: 0;
+    animation: $site-fade-in-time ease-out 2s 1 fadeInFromDirection forwards;
+
     background-color: transparent;
     position: fixed;
     top: 0;
@@ -84,12 +93,9 @@
 
 }
 
-@media only screen and (min-width: 700px) {
-    // computer screens
-    .navbar-socials {
-        display: none;
-    }
-  };
+// @media only screen and (min-width: 700px) {
+//     // computer screens
+// };
   
 @media only screen and (max-width: 701px) {
     // phone screens
