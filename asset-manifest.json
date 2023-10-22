@@ -1,0 +1,14 @@
+{
+  "files": {
+    "main.css": "/ocgracecya/static/css/main.f40ba8de.css",
+    "main.js": "/ocgracecya/static/js/main.37406bd8.js",
+    "static/media/City of Ember.otf": "/ocgracecya/static/media/City of Ember.7453bebb547da53bd143.otf",
+    "index.html": "/ocgracecya/index.html",
+    "main.f40ba8de.css.map": "/ocgracecya/static/css/main.f40ba8de.css.map",
+    "main.37406bd8.js.map": "/ocgracecya/static/js/main.37406bd8.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.f40ba8de.css",
+    "static/js/main.37406bd8.js"
+  ]
+}
