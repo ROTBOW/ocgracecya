@@ -2,19 +2,100 @@
 
 .navbar {
     background-color: transparent;
-
-    .navbar-title {
-        font-family: COE;
-        font-size: 3.5rem;
+    position: fixed;
+    top: 0;
+    margin-top: 0.5rem;
     
-        b {
-            color: rgb(255, 166, 0);
+    width: 100%;
+
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+
+    .navbar-middlebar {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        width: 100%;
+        
+        color: whitesmoke;
+        
+        .navbar-title {
+            margin-left: 1rem;
+            position: relative;
+            font-family: COE;
+            font-size: 3.5rem;
+            text-shadow: -1px -1px 1px rgba(255,255,255,.1), 1px 1px 1px rgba(0,0,0,.5);
+            width: fit-content;
+    
+            background-color: rgba(68, 68, 68, 0.8);
+    
+            border: 0.8rem grey solid;
+            border-radius: 2.6rem;
+            padding: 0.5rem;
+            color: whitesmoke;
+            // cursor: pointer; to add back in when the title can do something
+
+            -webkit-user-select: none; /* Safari */
+            -ms-user-select: none; /* IE 10 and IE 11 */
+            user-select: none; /* Standard syntax */
+        
+            b {
+                color: rgb(255, 166, 0);
+            }
+    
+            // &:after {
+            //     position: absolute;
+            //     top: -0.5rem;
+            //     right: -1.1rem;
+
+            //     content: " ";
+            //     width: 0;
+            //     height: 0;
+            //     border: 0.9rem solid transparent;
+    
+            //     border-bottom-color: darkgray;
+                
+            // }
         }
+
+        .navbar-socials {
+
+            display: flex;
+            justify-content: space-between;
+            width: 7rem;
+
+            svg {
+                fill: whitesmoke;
+                width: 40px;
+            }
+        }
+
     }
+    
 
     .navbar-line {
-        background-color: black;
+        background-color: darkgrey;
+        height: 0.1rem;
+        width: 98%;
+        margin-top: 1rem;
 
     }
 
 }
+
+@media only screen and (min-width: 700px) {
+    // computer screens
+    .navbar-socials {
+        display: none;
+    }
+  };
+  
+@media only screen and (max-width: 701px) {
+    // phone screens
+    .navbar-socials {
+        svg {
+            display: none;
+        }
+    }
+};
