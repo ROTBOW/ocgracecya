@@ -45,7 +45,7 @@
             border-radius: 2.6rem;
             padding: 0.5rem;
             color: whitesmoke;
-            // cursor: pointer; to add back in when the title can do something
+            cursor: pointer;
 
             -webkit-user-select: none; /* Safari */
             -ms-user-select: none; /* IE 10 and IE 11 */
@@ -102,8 +102,8 @@
 
 @media only screen and (min-width: 700px) {
     // computer screens
-    svg::hover {
-        color: red;
+    .navbar-dropdown {
+        display: none;
     }
 };
   
@@ -121,6 +121,16 @@
             // svg {
             //     display: none;
             // }
+        }
+
+        .navbar-dropdown {
+            display: inline;
+            margin-right: 0.5rem;
+            svg {
+                fill: orange;
+                width: 3rem;
+                height: 3rem;
+            }
         }
     }
 };
