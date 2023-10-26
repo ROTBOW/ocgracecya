@@ -23,15 +23,11 @@
 
 // @media only screen and (min-width: 1300px) {
 //     // computer screens
-//     .background {
-//         background-position: 0 -50rem;
-//     }
 //   };
   
 @media only screen and (max-width: 1301px) {
     // phone screens
     .background {
-        // background-position: 0 -10rem;
         background-repeat: repeat-y
     }
 };
