@@ -12,12 +12,19 @@ const Dropdown = ({show, setShow}) => {
         setShow('')
     }
 
+
     return (
         <div className={`dropdown ${show}`}>
             <Cross className="dropdown-exit" onClick={handleClick}/>
             <ol>
-                <li onClick={()=>navi('/home')}>Home</li>
-                <li onClick={()=>navi('/vespers')}>Vespers</li>
+                <li onClick={()=>{
+                    setShow('')
+                    navi('/home')
+                }}>Home</li>
+                <li onClick={()=>{
+                    setShow('')
+                    navi('/vespers')
+                }}>Vespers</li>
                 <li><a href="https://www.instagram.com/ocgracecya/">Instagram</a></li>
                 <li><a href="https://teamup.com/ks6hmadkxqrjc4ns29">Calendar</a></li>
             </ol>
